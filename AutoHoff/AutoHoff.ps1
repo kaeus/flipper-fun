@@ -94,6 +94,6 @@ $imgSources =
 
 $imageToGet = $imgSources | Get-Random
 
-Invoke-WebRequest $imageToGet -OutFile $filename -UseBasicParsing
+Invoke-WebRequest $imageToGet -OutFile $filename
 
 Set-WallPaper -Image "$filename" -Style Fit
